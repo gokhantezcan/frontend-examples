@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	#kapsayici{
+		max-width: 640px;
+		position: relative;
+		margin: auto;
+	}
+	.resim{
+		width: 100%;
+		display: none; /*hepsini suan için gizlemiş olacağız.*/
+	}
+	img{width: 100%;}
+	.ileri, .geri{
+		position: absolute;
+		background: #3E3E3E;
+		opacity: 0.6;
+		font-size: 20px;
+		padding: 10px;
+		color: aliceblue;
+		cursor: pointer;
+		top:50%;
+		transform: translateY(-50%); /*dikeyde ortaladık.*/
+		border-radius: 50%;
+		
+	}
+	.ileri{
+		right: 0;
+	}
+	.geri{
+		left: 0;
+	}
+	.aktif{
+		display: block;  /*resmin görünmnesini istediğinde aktif verilecek.*/
+		animation: fade 0.7s ease;
+	}
+	@keyframes fade{
+		0%{opacity: .5;}
+		100%{opacity: 1;}
+	}
+	ul {
+		list-style: none; /*basında belirtec olmasın*/
+		text-align: center; /*tam ortaladık*/
+	}
+	ul li{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #D0D0D0;
+		display: inline-block; /*bu olmasa block şeklinde oluyordu. satır içi bloc elemen yaptık ki yan ayna olsun*/
+	}
+	.aktiflist{
+		background: #707070;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div id="kapsayici" onMouseOver="dur()" onMouseOut="basla()">
+		<div class="resim"><img src="images/resim1.jpg" alt=""></div>
+		<div class="resim"><img src="images/resim2.jpg" alt=""></div>
+		<div class="resim"><img src="images/resim3.jpg" alt=""></div>
+		<div class="resim"><img src="images/resim4.jpg" alt=""></div>
+		<div class="ileri" onClick="ileri()">sag</div>
+		<div class="geri" onClick="geri()">sol</div>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	</div>
+	
+	<script>
+		var resim = document.getElementsByClassName("resim");
+		var kutucuk = document.getElementsByTagName("li");
+		
+		
+		var index = 0;
+		galeri();
+		basla();
+		function galeri(){
+			if(index >= resim.length){
+				index = 0;
+			}
+			else if(index < 0){
+				index = resim.length - 1;
+			}
+			for(i = 0; i < resim.length; i++){
+				resim[i].classList.remove("aktif");
+				kutucuk[i].classList.remove("aktiflist")
+				
+			}
+			resim[index].classList.add("aktif");
+			kutucuk[index].classList.add("aktiflist");
+			
+			console.log(index);
+		}
+		
+		function ileri(){
+			index++;
+			galeri();
+		}
+		function geri(){
+			index--;
+			galeri();
+		}
+		function dur(){
+			clearInterval(sure);
+		}
+		function basla(){
+			sure = setInterval(ileri,5000);
+		}
+	
+	</script>
+</body>
+</html>

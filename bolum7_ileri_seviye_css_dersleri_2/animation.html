@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+            .kutu{
+                position: absolute;
+                padding: 2px;
+                width: 300px;
+                height: 30px;
+                border-radius: 15px;
+                background: #424242;
+            }
+            .ic{
+                position: relative;
+                width: 30px;
+                height: 30px;
+                background: #e1ed62;
+                border-radius: 15px;
+                animation-name: ilerle;
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite; /*tekrar sayısı*/
+/*                animation-direction: alternate; ileri gidip geri gelir. reverse sondan basa dogru çalışacak*/
+                animation-direction: alternate;
+                animation-delay: 5s;
+                /*animation-fill-mode: forwards; animasyon son karede kalacaktır.*/
+            }
+            /*suan bir animasyon tanımlamaya basladık*/
+            @keyframes ilerle{
+                from{width: 30px;}
+                to{width: 300px;}
+                
+/*
+                bu sekilde bir frame oluşturabilirisin
+                0%{width: 30px;}
+                50%{width: 300px;}
+                100%{width: 30px;}
+*/
+                
+            }
+            
+            .ic:hover{
+                animation-play-state: paused;
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kutu">
+            <div class="ic"></div>
+        </div>
+    
+    </body>
+
+</html>

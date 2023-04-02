@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        <ol>
+            <li>Python</li>
+            <li>C#</li>
+            <li id="c">C++</li>
+            <li>Java</li>
+            <li>Javascript</li>
+        </ol>
+        
+        <button>Kalın yap</button>
+        
+        <script>
+        
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var liste = $("li");
+//                    var yeniListe = liste.filter(":odd");
+//                    yeniListe.css("font-weight", "bolder");
+//                    console.log(yeniListe);
+                    
+                    var yeniDizi = liste.filter(function(index){
+                        return index % 2 == 1 || $(this).attr("id") == "c";
+                    });
+                    yeniDizi.css("font-weight", "bolder");
+                });
+            });
+        
+        </script>
+        
+    </body>
+    
+</html>

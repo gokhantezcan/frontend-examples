@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <style>
+            .bilgi {
+                width: 200px;
+                height: 200px;
+                background: #ffb5b6;
+                border: 1px solid #000;
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        <div class="bilgi" id="icerik"><br>
+            Ad Soyad : <input type="text" name="adSoyad" id="aDSoyad" value=""><br>
+            Okul No:   <input type="text" id="okulno" name="okulNo" value="OkulNo">
+            <br>
+            <input type="button" value="basiniz" id="basiniz" name="basiniz">
+        </div>
+        
+        <script>
+        
+              $(document).ready(function(){
+                  $(":button").click(function(){
+                     $("#icerik").append($("input:eq(0)").attr("name")); 
+//                      $("input:eq(1)").attr("value", "Okul No");
+//                      $("input:eq(1)").attr({
+//                          type:"text",
+//                          id:"okulNo",
+//                          value:"Okul No"
+//                      });
+//                      $("input:eq(1)").removeAttr("value").removeAttr("id");
+                  });
+              });       
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

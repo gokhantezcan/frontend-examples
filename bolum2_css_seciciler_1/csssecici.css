@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+
+		@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700');
+
+	body{
+		background: #f5f5f5;
+		font-family: 'Crimson Text', serif;
+		color: #18314F;
+	}
+	.baslik{
+		font-size: 26px; 
+	}
+	h1{text-align: center;
+	letter-spacing: 4px;
+	color: #18314F;
+		font-weight: 400;
+
+	}
+
+	section{
+		width:800px;
+		height: 500px;
+		background: #FFFFFF;
+		border: 1px solid black;
+		margin: 20px auto;
+		box-shadow: 0 0 20px rgba(0,0,0,.25);
+		padding: 10px;
+
+	}
+	h2 {
+		font-weight: 400;
+		font-size: 1rem;
+		margin-bottom: 3em;
+		letter-spacing: 8px;
+		text-align: center;
+		color: #8BBEB2;
+}
+	
+	h2::after {
+	  content: '';
+	  display: block;
+	  border-bottom: 1px solid rgba(24,49,79,.3);
+	  width: 20%;
+	  margin: 20px auto 0;
+}
+
+	p{
+		color: #18314F;
+		font-size: 18px;
+		letter-spacing: 3px;
+		margin: 5px;
+}
+
+.kutular{
+width: 80px;
+padding: 30px 0;
+border: 1px solid rgba(0,0,0,1.00);
+float: left;
+margin: 10px;
+text-align: center;
+font-size: 18px;
+font-weight: 500;
+}
+
+/*********************** 1- Evrensel Seçici( * )**************************/
+/*
+*{background: #0621f9;} 
+tum ogeler etkilenmiş olacak. ayrı bir bu ozellikte css
+                        özelliği olanlar etkilenmezler.*/
+
+
+
+
+
+
+
+
+
+/******************* 2- Class Seçici(Sınıf Seçici .etiket)*******************/
+
+/*
+.sinif{background: red;
+font-size: 20px;}
+*/
+
+.kirmizi{
+    color: red;
+}
+.italik{
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************ 3- Id Seçici (Kimlik Seçici #etiket)****************/
+
+#paragraf{
+    font-size: 25px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************** 4- Etiket Seçici (a, div, p)****************************/
+
+
+/*
+p{
+    color: red;
+}
+a{
+    color: red;
+}
+*/
+
+/*
+p,a{
+    color: blue;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+/********************** 5- Çoklu Seçiciler(X,Y,Z) *****************************/
+.baslik, .icerik{
+    color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* 6- İç Nesne Seçiciler (Torun Seçiciler X Y)*****************************/
+
+.torun a{
+    color: brown;
+}
+.torun p{
+    color: pink;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+/********************* 7- Yanyana Seçiciler(X+Y)*****************************/
+
+.yanyana h3+p{/*h3 etiketinden sonra gelen p yi sec sadece*/
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************* 8- Çocuk Seçiciler(X>Y) *****************************/
+
+.cocuk > p{color:yellow;
+        font-size: 20px;
+        display: block;
+        border: 1px solid #f90409} 
+
+
+
+
+
+
+
+
+
+
+/********************* 9- Bitişik Seçiciler(X~Y) *****************************/
+/*ul den sonra gelen p etiketlerinin hepsini seçmek istiyorum*/
+.bitisik ul~p{
+	color:white;background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+/********************* 10- Nitelik Seçici(X[Y]) *****************************/
+
+.nitelik a[href^='https']{text-decoration: none;}
+.nitelik a[href$='yandex.com']{
+    color: red;
+}
+.nitelik input[type='text']{background: #88c2f1;}
+.nitelik input[value*='2']{
+    transform: scale(2);
+}
+.nitelik input[value~='Gonder']{
+    background: red;
+}
+
+
+
+
+
+
+/*********-11- Nitelik Seçici(X[Nitelik='Değer'] *, $, ^, ~ ) *************/
+
+
+.ilk p::first-letter{
+    font-size: 40px;
+}
+
+.ilk p::first-line{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************12- X::first-letter ve X::first-line *****************/
+
+
+.oncesonra p::after{
+    content: '';
+    border-bottom: 1px solid red;
+    width: 50%;
+    display: block;
+}
+
+.oncesonra p::before{
+    content: '';
+    border-bottom: 1px solid red;
+    width: 50%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************13- X::before ve X::after **************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************14- Nth(n'inci)-child  ***********************/
+
+.nth .kutular:nth-child(3){
+    background: yellow;
+}
+/*5. eleman ve sonrası için*/
+/*
+.nth .kutular:nth-child(n+5){ 
+    background: yellow;
+}
+*/
+/*ilk 5 eleman için*/
+/*
+.nth .kutular:nth-child(-n+5){ 
+    background: yellow;
+}
+*/
+/*5 den itibaren 3 er atlayarak sec*/
+/*
+.nth .kutular:nth-child(3n+5){ 
+    background: yellow;
+}
+*/
+/*tek numara olanları seçmektedir. çift için even yazmalısın*/
+/*
+.nth .kutular:nth-child(odd){ 
+    background: yellow;
+}
+*/
+
+/*
+.nth .kutular:last-child{ 
+    background: yellow;
+}
+*/
+
+/*
+.nth .kutular:nth-last-child(3){ 
+    background: yellow;
+}
+*/
+
+/************************************************************/
+/*
+.tablo tr:nth-child(even){
+    background: red;
+}
+*/
+
+
+/*****************************/
+
+/*üzerine gelindiğinde alt çizgiyi kaldırmaktadır*/
+/*
+.pseudo a:hover{
+    text-decoration: none;
+}
+*/
+/*ziyaret edilmiş ise*/
+/*
+.pseudo a:visited{
+    color: blue;
+}
+*/
+/*sol tus tıklandıgı anda*/
+/*
+.pseudo a:active{
+    color: darkgoldenrod;
+}
+*/
+/*tıklanmamış linklerde bu sekilde kullanılır*/
+/*
+.pseudo a:link{
+    color: red;
+}
+*/
+/*ilgii alana geldiğinde focuslanacak*/
+/*
+.pseudo input[name='ad']:focus{
+    background: green;
+}
+*/
+
+/*tıklanmış olan varsa*/
+/*
+.pseudo input:checked{
+    width: 50px;
+    height: 50px;
+}
+*/
+/*disable olanları kırmını yapacak*/
+/*
+.pseudo input[type='text']:disabled{
+    background: red;
+}
+*/
+/*enable olanları mavi yapacak*/
+/*
+.pseudo input[type='text']:enabled{
+    background: blue;
+}
+*/
+
+/*aralıkdan baska bir sayı girmen durumunda meydana gelir*/
+/*
+.pseudo input[type='number']:out-of-range{
+    background: red;
+}
+
+.pseudo input[type='number']:in-range{
+    background: yellow;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

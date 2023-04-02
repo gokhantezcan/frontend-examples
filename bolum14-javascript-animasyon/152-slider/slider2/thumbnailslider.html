@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thumbnail Slider</title>
+	<style>
+		*{margin: 0; padding: 0;}
+		#kapsayici{
+			max-width: 640px;
+			position: relative;
+			margin: auto;
+		}
+		.resim{
+			width: 100%;
+			display: none;
+		}
+		ul{
+			list-style: none;
+			text-align: center;
+		}
+		ul li{
+			width: 75px;
+			height: 45px;
+			display: inline-block;
+			opacity: 0.6;
+			cursor: pointer;
+		}
+		img{
+			width: 100%;
+		}
+		.aktif{
+			display: block;
+			animation: fade .7s ease;
+		}
+		@keyframes fade{
+			0%{opacity: .5}
+			100%{opacity: 1;}
+		}
+		.aktifOnizleme{
+			opacity: 1;
+			animation: fade .7s ease;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="kapsayici" onMouseOver="dur()" onMouseOut="basla()">
+		<div class="resim" ><img src="images/resim1.jpg" alt=""></div>
+		<div class="resim"><img src="images/resim2.jpg" alt=""></div>
+		<div class="resim"><img src="images/resim3.jpg" alt=""></div>
+		<div class="resim"><img src="images/resim4.jpg" alt=""></div>
+		
+		<ul>
+			<li><img src="images/kresim1.jpg" alt="" onClick="galeri(0)"></li>
+			<li><img src="images/kresim2.jpg" alt="" onClick="galeri(1)"></li>
+			<li><img src="images/kresim3.jpg" alt="" onClick="galeri(2)"></li>
+			<li><img src="images/kresim4.jpg" alt="" onClick="galeri(3)"></li>
+		</ul>
+	</div>
+	
+	<script>
+		var resim = document.getElementsByClassName("resim");
+		var kucukResim = document.getElementsByTagName("li");
+		var index = 0;
+		galeri(index);
+		basla();
+		function galeri(indis){
+			index = indis;
+			if(index >= resim.length){
+				index = 0;
+			}
+			else if(index < 0){
+				index = resim.length - 1;
+			}
+			for(i = 0; i<resim.length; i++){
+				resim[i].classList.remove("aktif");
+				kucukResim[i].classList.remove("aktifOnizleme")
+			}
+			resim[index].classList.add("aktif");
+			kucukResim[index].classList.add("aktifOnizleme");
+			console.log(index);
+		}
+		
+		function sonraki(){
+			index++;
+			galeri(index);
+		}
+		function basla(){
+			sure = setInterval(sonraki,2000);
+		}
+		function dur(){
+			clearInterval(sure);
+		}
+		
+	</script>
+</body>
+</html>

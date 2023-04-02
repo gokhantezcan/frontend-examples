@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        
+        
+    </head>
+    
+    <body>
+        
+        <div><h4>Gizle / Goster</h4><p>Javascript</p></div>
+        <div><h4>Gizle / Goster</h4><p>JQuery</p></div>
+        <div><h4>Gizle / Goster</h4><p>PHP</p></div>
+        
+        <script>
+        
+           $(document).ready(function(){
+            
+               var secici = $("div");
+               console.log(secici.length);
+               secici.find("p").css("display", "none"); // find kullnarak çocukların arasından secim yapabiliyoruz.
+               secici.click(function(){
+//                   $(this).find("p").slideToggle(500);
+                   $(this).children("p").slideToggle(200);
+               });
+               
+           });
+        
+        </script>
+        
+    </body>
+    
+</html>

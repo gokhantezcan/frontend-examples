@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        <style>
+            .baslik{
+                color: red;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Burasi Baslik</h1>
+        <a></a>
+        
+        <script>
+            
+//            var sec = document.getElementsByTagName("h1")[0];
+//            sec.setAttribute("class", "baslik");
+            var sec = document.getElementsByTagName("a")[0];
+            sec.setAttribute("href", "https://google.com");
+            sec.innerHTML="Google";
+            sec.setAttribute("style", "color:yellow");
+            
+            btn = document.createElement("input");
+            document.body.appendChild(btn);
+            buton = document.getElementsByTagName("input")[0];
+            buton.setAttribute("type", "button");
+            buton.setAttribute("value", "basiniz");
+            buton.setAttribute("onClick", "naber()");
+        
+            function naber(){
+                alert("naber");
+            }
+            
+            
+            
+            btnAttribute = document.getElementsByTagName("input")[0];
+            alert(btnAttribute.hasAttribute("type"));
+            alert(btnAttribute.getAttribute("type"));
+            btnAttribute.removeAttribute("type");
+            
+        </script>
+        
+    </body>
+    
+</html>

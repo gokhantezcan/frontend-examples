@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video Background</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.banner{
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+	}
+	.banner video{
+		position: absolute;
+		min-width: 100%;
+		min-height: 100%;
+		top:50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.banner .yazi{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		
+	}
+	.banner h1{
+		text-align: center;
+	}
+	@media screen and (max-width: 992px){
+		.banner{
+			height: 70vh;
+		}
+	}
+</style>
+	</head>
+
+<body>
+	<div class="banner">
+		<video src="video.mkv" autoplay loop muted></video>
+		<div class="yazi">
+			<h1>BİLİŞİM DÜNYASI</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus at eligendi recusandae quia, accusamus illum, error fuga iure necessitatibus, ex minima animi!</p>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+        <script src="bootstrap/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        
+        <style>
+            div[class*="col"]{
+                border: 2px solid #ff0004;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="container bg-primary text-white">
+            <div class="row">
+               <div class="col-md col-sm-6">1.sütun</div> <!-- eşit uzunlukta sutun oluşturmakl için bunları buy sekilde yazabilirisn.-->
+                <div class="col-md col-sm-6">2.sütun</div>
+                <div class="col-md col-sm-12">3.sütun</div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="container bg-primary text-white">
+            <div class="row">
+               <div class="col-sm-5">1.sütun</div> <!-- eşit uzunlukta sutun oluşturmakl için bunları buy sekilde yazabilirisn.-->
+                <div class="col-sm-auto">2.sütun geniliği otomaitkltir.</div> <!--içerideki değerin uzunluğuna göre otomatikl yapar.
+                sıgmazsa 3. sutun aşağıya kayacaktır.-->
+                <div class="col-sm-3">3.sütun</div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="container bg-primary text-white">
+            <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1">  <!-- satır üzerinden de sutun sayısı ile oynayabilirisn.-->
+               <div class="col">1.sütun</div> 
+                <div class="col">2.sütun</div>
+                <div class="col">3.sütun</div> <!-- md ve ustunde içerik otomatik olcak.-->
+                <div class="col">4.sütun</div>
+            </div>
+        </div>
+        
+       
+    </body>
+    
+</html>

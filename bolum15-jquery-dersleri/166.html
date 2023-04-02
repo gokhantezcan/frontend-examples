@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <style>
+            .container{
+                width: 300px;
+                height: 250px;
+                background: #ff0004;
+                position: relative;
+            }
+            .box1{
+                position: absolute;
+                width: 90%;
+                height: 150px;
+                background: #f8f8b7;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 5px;
+            }
+            .button{
+                padding: 8px 15px;
+                background: #5f98fd;
+                cursor: pointer;
+                display: inline-block;
+                margin: 5px;
+                box-shadow: 3px 1px 13px 0px rgba(0,0,0,0.7);
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <div class="button">Gizle</div>
+            <div class="button">Göster</div>
+            <div class="button">Gizle/Göster</div>
+            <div class="box1">
+                <p style="cursor: pointer; display: inline-block">X</p>
+                
+                lsdfkjlkdsfjdlskjfklşdsjfkldsjflşdsfşlk
+            kfdsjflşdsfşlkdsşlfkdslşfkşlsd</div>
+        </div>
+        
+        
+        <script>
+        
+             $(document).ready(function(){
+                 $(".button:eq(0)").click(function(){
+                     $(".box1").fadeOut(500, function(){
+                         alert("naber"); // fadeout bittikten sonra buradaki komut çalışacaktır.
+                     });
+                 });
+                 
+                 $(".button:eq(1)").click(function(){
+                     $(".box1").fadeIn("fast");
+                 });
+                 
+//                 $(".button:eq(2)").click(function(){
+//                     $(".box1").fadeToggle("fast");
+//                 });
+                 
+                 $(".button:eq(2)").click(function(){
+                     $(".box1").fadeTo("fast", .5);
+                 });
+                 
+             });
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

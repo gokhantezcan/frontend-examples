@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<button onClick="vericek()">Verileri Getir</button>
+<div id="icerik"></div>
+	
+<script>
+	function vericek(){
+	var istek = new XMLHttpRequest();
+	istek.onload = function(){
+		if(this.readyState == 4 && this.status == 200){
+			var data = JSON.parse(this.responseText);
+			for(i = 0; i < 3; i++){
+			document.getElementById("icerik").innerHTML += "Ad: " + data.kisiler[i].ad + "<br>";
+			document.getElementById("icerik").innerHTML += "Soyad: " + data.kisiler[i].soyad + "<br>";
+			document.getElementById("icerik").innerHTML += "yas: " + data.kisiler[i].yas + "<br>";
+			document.getElementById("icerik").innerHTML += "emekli: " + data.kisiler[i].emekli + "<br>";
+			document.getElementById("icerik").innerHTML += "maas: " + data.kisiler[i].maas + "<br>";
+			document.getElementById("icerik").innerHTML += "hobi: " + data.kisiler[i].hobi + "<br><br>";
+			}
+			
+			
+		}else{
+			alert("Bilinmeyen Hata Meydan Geldi");
+		}
+	}
+	
+	
+	istek.open("GET","http://bilisimdunyasi.site/json_dersleri/veri.json",true);
+	istek.send()
+	}
+</script>
+</body>
+</html>

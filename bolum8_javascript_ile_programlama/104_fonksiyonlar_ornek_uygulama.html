@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ananim Fonksiyonlar</title>
+        
+        
+        
+    </head>
+     
+    <body>
+        
+        <p id="goster">Buranin yazi boyutu ve rengi degisecektir.</p>
+        <br>
+        <a href="#" onclick="yaziBoyutu('20px')">20px</a>
+        <a href="#" onclick="yaziBoyutu('50px')">50px</a>
+        <a href="#" onclick="yaziBoyutu('300px')">300px</a>
+        <a href="#" onclick="yaziRengi('Blue')">Mavi</a>
+        <script>
+            
+            eleman = document.getElementById("goster");
+            
+            function yaziBoyutu(boyut){
+                eleman.style.fontSize = boyut;
+            }
+            
+            function yaziRengi(renk){
+                eleman.style.color = renk;
+            }
+            
+            
+        </script>
+        
+    </body>
+    
+</html>

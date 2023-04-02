@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+            
+        
+        <style>
+          
+           
+            
+        </style>
+            
+        
+    </head>
+    
+    <body>
+
+        <div id="makale">
+            dkljfkldsjfkjdsklfklsdjfremjvjmkdfsjkvjdskljerlkjkfldgmvkdfmkfdlgejrıjısemfklşsdmfksldjf
+            fdsşflkşsdlkfşldskfşldskflşksdşflsdşlfösdlöfsd
+            <strong class="yazdir" onClick="yazdir()">Yazdir</strong>
+        </div>
+        
+        
+        
+    <script>
+        
+       function yazdir(){
+           var yazMetin = document.getElementById("makale");
+           var pencere = window.open("", "_blank", "width=500, height=500, top=0, left=0");
+           pencere.document.write(yazMetin.innerHTML);
+           pencere.print();
+           pencere.close();
+           
+//           var sayfa = document.body.innerHTML;
+//           document.body.innerHTML = yazMetin.innerHTML;
+//           window.print();
+//           document.body.innerHTML = sayfa;
+       }
+        
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

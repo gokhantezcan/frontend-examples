@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            /*word-break ---  satırın sonuna gelindiğinde nasıl bir kırılma olcağını soyler*/
+            
+            .kutu{
+                width: 150px;
+                height: 150px;
+                overflow: hidden;
+                border: 1px solid #000;
+                /*word-break: break-all; kelimenin içinden bile bölme işlemi yapar.*/
+                word-break: keep-all; /*kelimeleri dikkate alarak yaapar.*/
+                text-overflow: inherit;/*sığmayan yazıların sonuna */
+                white-space: pre-wrap;
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kutu">Lorem ipsum dolor sdfdsfsdfdssdjknfklsdflkjsdlkfjsdklfjklsdfjkldsfjklsd 
+            sit amet, consectetur adipiscing elit. In mollis egestas neque eu dignissim. Fusce urna magna, venenatis euaugue eu, commodo venenatis massa. Mauris elementum sapien erat, eu euismod ligula efficitur eleifend. Suspendisse pellentesque accumsan neque pharetra vehicula. Duis eget enim odio. Praesent et tortor elit
+        </div>
+    
+    </body>
+
+</html>

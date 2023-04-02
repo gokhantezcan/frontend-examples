@@ -1,0 +1,31 @@
+{
+	"kisiler" : [
+		{
+			"ad" : "Ahmet",
+			"soyad" : "Koç",
+			"yas" : 37,
+			"emekli" : false,
+			"maas" : null,
+			"hobi" : ["müzik","spor","resim"]
+		},
+		{
+			"ad" : "Ümit",
+			"soyad" : "Öztürk",
+			"yas" : 36,
+			"emekli" : false,
+			"maas" : 7500,
+			"hobi" : ["kaligrafi","spor","müzik"]
+		},
+		{
+			"ad" : "Selçuk",
+			"soyad" : "Doğan",
+			"yas" : 35,
+			"emekli" : false,
+			"maas" : null,
+			"hobi" : ["müzik","spor","resim"]
+		}
+	
+	 ]
+
+		
+}

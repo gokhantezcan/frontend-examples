@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            .kapsayici{
+                width: 240px;
+                height: 200px;
+                margin: 10px;
+                float: left;
+            }
+            
+            .on{
+                position: absolute;
+                width: 240px;
+                height: 200px;
+                border-radius: 7px;
+                transform: perspective(500px) rotateY(0deg);
+                backface-visibility: hidden; /*arka tarafları geldiğinde ekranda görünmesin*/
+                background: #d0e441;
+                transition: transform 1s linear;
+            }
+            
+            .arka{
+                position: absolute;
+                width: 240px;
+                height: 200px;
+                border-radius: 7px;
+                transform: perspective(500px) rotateY(180deg);
+                backface-visibility: hidden;
+                background: #d0e441;
+                transition: transform 1s linear;
+            }
+            
+            .kapsayici:hover .on{
+                transform: perspective(500px) rotateY(-180deg);
+            }
+            
+            .kapsayici:hover .arka{
+                transform: perspective(500px) rotateY(0deg);
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kapsayici">
+            <div class="arka">Arka Taraf</div>
+            <div class="on">On Taraf</div>            
+        </div>
+        
+        <div class="kapsayici">
+            <div class="arka">Arka Taraf</div>
+            <div class="on">On Taraf</div>            
+        </div>
+        
+        <div class="kapsayici">
+            <div class="arka">Arka Taraf</div>
+            <div class="on">On Taraf</div>            
+        </div>
+    
+    </body>
+
+</html>

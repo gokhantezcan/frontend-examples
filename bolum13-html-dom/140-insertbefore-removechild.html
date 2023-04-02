@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+    </head>
+    
+    <body>
+        
+        <ul id="liste1"><li>Python</li><li>C#</li></ul>
+        
+        <ul id="liste2"><li>Java</li><li>Javascript</li></ul>
+       
+        <input type="button" value="tasi" onclick="tasi()">
+        <input type="button" value="sil" onclick="sil()">
+        
+        <script>
+            // whiteSpace olayına dikakt et bu durumlarda.
+            function tasi(){
+                var tasinacakEleman = document.getElementById("liste2").lastChild;
+                var nereyeTasinacak = document.getElementById("liste1");
+                nereyeTasinacak.insertBefore(tasinacakEleman, nereyeTasinacak.childNodes[0]);
+            }
+            
+            function sil(){
+                var silinecekEleman = document.getElementById("liste1");
+                silinecekEleman.removeChild(silinecekEleman.lastChild);
+            }
+            
+        
+        </script>
+        
+    </body>
+    
+</html>

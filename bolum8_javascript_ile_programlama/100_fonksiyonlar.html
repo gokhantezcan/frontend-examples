@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fonksiyonlar</title>
+        
+        
+        
+    </head>
+     
+    <body>
+        
+        <p id="result"></p>
+        <script>
+            
+            function dikdortgenCevre(){
+                var a, b, cevre;
+                a = parseInt(prompt("kısa kenari girin"));
+                b = parseInt(prompt("uzun kenari girin"));
+                cevre = 2 * (a + b);
+                return cevre;
+            }
+            
+            function yazdir(){
+                document.getElementById("result").innerHTML = dikdortgenCevre();
+            }
+            
+            yazdir();
+            
+//            function dikdortgenCevre(uzunKenar, kisaKenar){
+//                var cevre = (uzunKenar + kisaKenar) * 2;
+//                return cevre;
+//            }
+//            
+//            dikdortgen = dikdortgenCevre(17, 10);
+//            document.getElementById("result").innerHTML = dikdortgen;
+            
+            
+        </script>
+        
+    </body>
+    
+</html>

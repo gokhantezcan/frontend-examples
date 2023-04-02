@@ -1,0 +1,6 @@
+Video da 65. satıra kadar hazır css kullanmışım. 
+Fakat aylar sonra tekrar kodları oluşturduğum zaman bu kadar 
+satır kod yer almadığını farkettim. muhtemelen videoyu 
+hazırladığım esnada kodların arasına fazla boşluk bırakmamdan
+kaynaklanmıştır. Bu içeriği istek üzerine video çekiminden çok
+sonra tekrar oluşturuldu. 

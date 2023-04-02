@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>If Else</title>
+        <script>
+            
+        </script>
+    </head>
+     
+    <body>
+        
+        <script>
+            bilgi = [];
+            ad = prompt("ogrenci adi");
+            not = parseInt(prompt("not"));
+            i = 0;
+            while(ad != null && Number.isInteger(not)){
+                bilgi[i] = [ad, not];
+                ad = prompt("ogrenci adi");
+                not = parseInt(prompt("not"));
+                i++;
+            }
+            console.log(bilgi[0][1]);
+            
+        </script>
+        
+    </body>
+    
+</html>

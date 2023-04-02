@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ananim Fonksiyonlar</title>
+        
+        
+        
+    </head>
+     
+    <body>
+        
+        <p id="goster"></p>
+        <script>
+            
+            var pi = 3.14; // global
+            console.log(asd);
+            
+            function alanHesapla(r){
+                var alan = pi * r * r; //lokal
+                asd = "gokhan"; // global var yoksa basından programın her yerinde kullanılır. var varsa lokal olur.
+                return alan;
+            }
+            
+            function cevreHesapla(r){
+                var cevre = 2 * pi * r;
+                console.log(asd);
+                return cevre;
+            }
+            
+//            (function deneme(){
+//                alert("deneme")
+//            })(); // bu fonksiyon otomatik çalışacaktır. çağırmaya gerek kalmayacak.
+            
+//            function naber(){
+//                console.log(asd);
+//            }
+//            
+//            naber();
+            
+        </script>
+        
+    </body>
+    
+</html>

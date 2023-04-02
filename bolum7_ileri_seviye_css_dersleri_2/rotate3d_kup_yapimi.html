@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            *{
+                box-sizing: border-box;/*kenarlık widt değerlerinin içinde olacak bu sekilde*/
+            }
+            
+            body{
+                background: #000;
+            }
+            
+            .kapsayici{
+                width: 400px;
+                height: 400px;
+                margin: 200px auto;
+                perspective: 300px;
+            }
+            
+            .kup{
+                width: 300px;
+                height: 300px;
+                transform-style: preserve-3d; /*küpün altındaki nesneler 3 boyutlu davranacaktır*/
+                transform: rotate3d(1, 1, 1, 45deg);
+            }
+            
+            .kenar{
+                backface-visibility: hidden;/*3 boyutlularda arka yuzu gorunmeyecek*/
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                background: #131313;
+                opacity: .7;
+                font-size: 70px;
+                line-height: 200px;
+                color: aliceblue;
+                text-align: center;
+                border: 15px solid #fff;
+            }
+            
+            .on{
+                transform: translateZ(100px);
+            }
+            
+            .arka{
+                transform: rotateY(180deg) translateZ(100px); /*nesnenin arkasını gördüğümüz için 100px dedik ve yukarıdakinde farklı oldu*/
+            }
+            
+            .sag{
+                transform: rotateY(90deg) translateZ(100px);
+            }
+            
+            .sol{
+                transform: rotateY(-90deg) translateZ(100px);
+            }
+            
+            .ust{
+                transform: rotateX(90deg) translateZ(100px);
+            }
+            
+            .alt{
+                transform: rotateX(-90deg) translateZ(100px);
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kapsayici">
+            <div class="kup">
+                <div class="kenar on">1</div>
+                <div class="kenar arka">2</div>
+                <div class="kenar ust">3</div>
+                <div class="kenar alt">4</div>
+                <div class="kenar sag">5</div>
+                <div class="kenar sol">6</div>
+            </div>
+        </div>
+    
+    </body>
+
+</html>

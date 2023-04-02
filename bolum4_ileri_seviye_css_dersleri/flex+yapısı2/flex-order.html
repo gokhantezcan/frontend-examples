@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flex</title>
+        
+        <style>
+            .container{
+                display: flex;
+                height: 400px;
+                align-items: flex-start;
+                align-content:  space-around;
+                background-color: #4644ff;
+                flex-wrap: wrap;
+            }
+            
+            .kutu{
+                background-color: #f1f1f1;
+                width: 90px;
+                text-align: center;
+                line-height: 75px;
+                margin: 10px;
+                font-size: 30px;
+            }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <div class="container">
+            <div class="kutu">1</div>
+            <div class="kutu">2</div>
+            <div class="kutu" style="order: 2">3</div>
+            <div class="kutu">4</div>
+            <div class="kutu">5</div>
+            
+        </div>
+    
+    </body>
+    
+    
+</html>

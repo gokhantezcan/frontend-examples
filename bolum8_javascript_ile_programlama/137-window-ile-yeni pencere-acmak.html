@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>If Else</title>
+        <script>
+            
+        </script>
+    </head>
+     
+    <body>
+        
+        <a href="" onclick="yeniPencere()">Google</a>
+        <button onclick="kapat()">Kapat</button>
+        
+        <script>
+            var pencere;
+           function yeniPencere(){
+               pencere = window.open("https://google.com", "_blank", "width=400, height=400");
+           }
+            
+            function kapat(){
+                pencere.close();
+            }
+        </script>
+        
+    </body>
+    
+</html>

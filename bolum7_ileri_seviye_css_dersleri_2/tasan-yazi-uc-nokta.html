@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            /*paragrafın sonuna 3 nokta koymak için */
+            /*soluklaşarak kaybolmasını da kullanabilrtisn.*/
+            
+            .yontem1{
+                max-width: 300px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp:3; /*kaç satır olasını istersek. her biri kutu olacak*/
+                -webkit-box-orient:vertical; /*hangi yöne doğru kaç tane kutu sıralanmasını istedik gibi*/
+            }
+            
+            .yontem2{
+                position: relative;
+                max-width: 300px;
+                overflow: hidden;
+                height: 54px;
+            }
+            
+            .yontem2:after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 50%;
+                height: 15px;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)50%)
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="yontem1">Lorem ipsum dolor sdfdsfsdfds 
+            sit amet, consectetur adipiscing elit. In mollis egestas neque eu dignissim. Fusce urna magna, venenatis euaugue eu, commodo venenatis massa. Mauris elementum sapien erat, eu euismod ligula efficitur eleifend. Suspendisse pellentesque accumsan neque pharetra vehicula. Duis eget enim odio. Praesent et tortor elit
+        </div>
+        
+        <br>
+        
+        <div class="yontem2">Lorem ipsum dolor sdfdsfsdfds 
+            sit amet, consectetur adipiscing elit. In mollis egestas neque eu dignissim. Fusce urna magna, venenatis euaugue eu, commodo venenatis massa. Mauris elementum sapien erat, eu euismod ligula efficitur eleifend. Suspendisse pellentesque accumsan neque pharetra vehicula. Duis eget enim odio. Praesent et tortor elit
+        </div>
+    
+    </body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+        <script src="205-2/dropdown/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        
+        <style>
+            div[class*="col"]{
+                border: 2px solid #ff0004;
+            }
+            
+            img{
+                max-width: 200px;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Açılır Menü</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item">Link1</a>
+            </div>
+        </div>
+        
+        ------------------
+        <br>
+        <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Açılır Menü</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item">Link1</a>
+            </div>
+        </div>
+        <br>
+        ------------------
+        <br>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Buton</button>
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item">Link1</a>
+            </div>
+        </div>
+        <br>
+        ------------------
+        <br>
+       <div class="btn-group dropup"> <!-- right left vs. de yapabilirisin.-->
+            <button class="btn btn-secondary">Buton</button>
+            <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"></button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link1</a>
+                <a href="#" class="dropdown-item disabled">Link1</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item active">Link1</a>
+            </div>
+        </div>
+        <br>
+        ------------------
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="btn-group">
+                        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Açılıur Menu</button>
+                        <div class="dropdown-menu dropdown-menu-left">
+                            <a href="#" class="dropdown-item">Link1</a>
+                            <a href="#" class="dropdown-item">Link2</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Link3</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+        <br>
+        ------------------
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="btn-group">
+                        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Açılıur Menu</button>
+                        <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                        <p>
+                            skşdaflesflşdsflşsdkflşkdslşfksdlşfklsşdfklşdskflşdkslşfksd
+                        </p>
+                        <p class="mb-0">
+                            ksjadksajdklas
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

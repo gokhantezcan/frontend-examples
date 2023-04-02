@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Deneme</title>
+        <script>
+            function olay(){
+                alert("olay gerçekleşti.");
+            }
+            
+        </script>
+    </head>
+     
+    <body onload="olay()" onresize="olay()">
+        
+        <input type="text" id="metin" onfocus="olay()">
+        <input type="text" id="metin" onBlur="olay()">
+        <input type="text" id="metin" onKeyDown="olay()">
+        <input type="text" id="metin" onSelect="olay()">
+        <input type="button" value="buton" onclick="olay()">
+        <input type="button" value="buton" onDblClick="olay()">
+        <input type="button" value="buton" onMouseOver="olay()">
+        <input type="button" value="buton" onMouseOut="olay()">
+        <input type="button" value="buton" onMouseMove="olay()"> <!-- nesne üzerinde hareket ettirildiğinde -->
+        <input type="button" value="buton" onMouseDown="olay()"> <!-- sol tuş basıldığında basar basmaz -->
+        <input type="button" value="buton" onMouseUp="olay()">
+        
+        <form action="" onsubmit="olay()">
+            <p id="mesaj">Merhaba Javascript</p>
+            <input type="text" id="metin" name="naber">
+            <input type="submit" value="buton">
+        </form>
+        
+        <img src="dsfsd.jpg" alt="resim" onError="olay()">
+        
+    </body>
+    
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        
+    </head>
+    
+    <body>
+        
+        <div id="kutu1">aa
+        <div id="kutu2">bb
+        <div id="kutu3">cc
+        </div></div></div>
+        <script>
+            
+            // c ye tıkladıgında normalde a ve b de calışmaktadır.
+            // false önce en ustteki falan sıralamayı değiştirmektedir.
+            // aşagıdan yukkjarı veya yukarıdan aşağı çalılmaktadıor.
+            
+            kutu1 = document.getElementById("kutu1");
+            kutu2 = document.getElementById("kutu2");
+            kutu3 = document.getElementById("kutu3");
+            
+            kutu1.addEventListener("click", function(e){
+                alert("kutu1 tiklandi");
+            }, false);
+            kutu2.addEventListener("click", function(e){
+                //e.stopPropagation();
+                alert("kutu2 tiklandi");
+            }, true);
+            kutu3.addEventListener("click", function(e){
+                e.stopPropagation();
+                alert("kutu3 tiklandi");
+            });
+            
+        </script>
+        
+    </body>
+    
+</html>

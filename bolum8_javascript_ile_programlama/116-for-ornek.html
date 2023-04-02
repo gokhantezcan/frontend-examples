@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>If Else</title>
+        <script>
+            
+        </script>
+    </head>
+     
+    <body>
+
+        <input type="checkbox" name="hobi">Kitap<br>
+        <input type="checkbox" name="hobi">Resim<br>
+        <input type="checkbox" name="hobi">Spor<br>
+        <input type="checkbox" name="hobi">Gezi<br>
+        <input type="button" value="tümünü seç" onclick="tumunuSec()">Kitap<br>
+       
+        <script>
+            function tumunuSec(){
+                var sayi = document.getElementsByName("hobi").length;
+                var i;
+                for(i=0; i< sayi; i++){
+                    document.getElementsByName("hobi")[i].checked = true;
+                }
+            }
+        </script>
+        
+    </body>
+    
+</html>

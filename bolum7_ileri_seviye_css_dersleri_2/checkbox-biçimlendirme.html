@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        
+        <style>
+        
+            /*önceden checkbox idi şimdi radiobutton oldu*/
+            
+            input[type="radio"]{
+                display: none; /*amaç seçim bir yazısını for kullanarak kutu eklemek*/
+            }
+            
+            span{position: relative;
+                margin-left: 40px;
+            }
+            
+            span:before{
+                content: "\f0c8";
+                font-family: "Font Awesome 5 Free";
+                font-size: 16px;
+                color: #e8e8e8;
+                left: -40px;
+            }
+            
+            input[type="radio"]:checked + span:before{
+                content: "\f14a";
+                font-family: "Font Awesome 5 Free";
+                font-size: 16px;
+                color: #06a3e9;
+                animation: anima 0.5s ease;
+            }
+            
+            @keyframes anima{
+                0%{
+                    font-size:  1.8em;
+                }
+                
+                50%{
+                    font-size:  2.3em;
+                }
+                
+                100%{
+                    font-size:  1em;
+                }
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <form action="">
+        
+            <label>
+                <input type="radio" name="radio"><span>Seçim1</span> 
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="radio"><span>Seçim2</span>
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="radio"><span>Seçim3</span>
+            </label>
+        
+        </form>
+        
+    
+    </body>
+
+</html>

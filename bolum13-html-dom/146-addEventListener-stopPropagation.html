@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        
+    </head>
+    
+    <body>
+        
+        <input type="text" name="" id="sayi">
+        <div id="sonuc"></div>
+        
+        <script>
+            sayi = document.getElementById("sayi");
+            sayi.addEventListener("keyup", function(e){
+                if(sayi.value % 2 == 0){
+                    document.getElementById("sonuc").innerHTML = "sayiniz cift";
+                } else {
+                    document.getElementById("sonuc").innerHTML = "sayiniz tek";
+                }
+                
+                
+            }) // event (on olmayacak), function
+            
+        </script>
+        
+    </body>
+    
+</html>

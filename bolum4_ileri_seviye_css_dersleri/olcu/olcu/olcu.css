@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;
+padding: 0;
+}
+
+body{
+    font-size: 16px;
+}
+
+html{
+    font-size: 10px;
+}
+
+h3{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+.kutu{
+	width: 600px;
+	padding: 10px;
+	background: #D3DBFF;
+	margin: 10px auto;
+}
+.kutu:nth-child(1) p{
+	font-size: 16px;
+}
+.kutu:nth-child(2) p{
+	font-size: 16px;
+}
+.kutu:nth-child(3) p{
+	font-size:16px;
+}
+.kutu:nth-child(4) p{
+	font-size: 32px;
+}
+.kutu:nth-child(5) p{
+	font-size: 2em;
+}
+.kutu:nth-child(6) p{
+	font-size: 2rem;
+}
+.kutu:nth-child(7) p{
+	font-size: 100%;
+}
+.kutu:nth-child(7){
+	width: 100%;
+	box-sizing: border-box; /*margin padding gibi boşlukları içeri çekmeye yaramaktadır.*/
+}
+.kutu:nth-child(8) p{
+	font-size: 12pt;
+}
+.kutu:nth-child(9) p{
+	font-size: 4mm;
+}
+.kutu:nth-child(10) p{
+	font-size: 0.5cm;
+}
+.kutu:nth-child(11){
+	font-size: 0.5cm;
+	height: 100%;
+	width: 100vw;
+    max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.kutu:nth-child(11) p{
+	font-size: 2vmax;
+}
+

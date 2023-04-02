@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+        <script src="bootstrap/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        
+        <style>
+            div[class*="col"]{
+                border: 2px solid #ff0004;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+       <div class="container bg-primary text-white">
+            <div class="row">
+                <div class="col-md-4 order-sm-2 order-md-2">1</div>
+                <div class="col-md-4 order-sm-3 order-md-1">2</div>
+                <div class="col-md-4 order-sm-1 order-md-3">3</div>
+           </div>
+        </div>
+        
+        --------------------------
+        
+        <div class="container bg-primary text-white">
+            <div class="row">
+                <div class="col-md-4 m-1 p-3 order-sm-2 order-md-1">1</div>
+                <div class="col-md-2 m-1 p-3 order-sm-3 order-md-2">2</div>
+                <div class="col-md-4 m-1 p-3 order-sm-1 order-md-3">3</div>
+           </div>
+        </div>
+        
+        -------------------
+<!--        md ve ustu ekranlar için 48 px boşlukl bırakacak-->
+        <div class="container bg-primary text-white">
+            <div class="row">
+                <div class="col-md-4 px-md-5 py-sm-5 py-md-0  order-sm-2 order-md-1">1</div>
+                <div class="col-md-4 px-md-5 py-sm-5 py-md-0 order-sm-3 order-md-2">2</div>
+                <div class="col-md-4 px-md-5 py-sm-5 py-md-0 order-sm-1 order-md-3">3</div>
+           </div>
+        </div>
+        
+        -------------------------
+<!--        kendi clasların içinde kullanabilirisn-->
+        
+        <div class="kapsayici p-5 bg-primary text-white" style="width: 200px;">
+            İçerik
+        </div>
+       
+    </body>
+    
+</html>

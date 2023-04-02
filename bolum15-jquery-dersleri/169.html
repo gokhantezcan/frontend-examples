@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        
+        
+        <style>
+            
+        </style>
+        
+        
+        
+    </head>
+    
+    <body>
+
+        <div class="container">
+            <select name="" id="uzmanlik">
+                <option value="">Seciniz</option>
+                <option value="grafik">Grafiker</option>
+                <option value="web">Web Programlama</option>
+                <option value="masaustu">Masaustu Programlama</option>
+            </select>
+            
+            <br>
+            <div class="secenek"><form action="" class="bilgi" method="get"></form>
+                
+            </div>
+            
+        </div>
+        
+        <script>
+            
+            $(document).ready(function(){
+                $("select").change(function(){
+                    var meslek = $(".container option:selected").val();
+                    $(".bilgi").empty();
+                    if(meslek == "grafik"){
+                        $(".bilgi").append('<input type="checkbox" name="meslek" value="PS">pHOTOSHOP>');
+                    }
+                    $(".bilgi").append('<input type="submit" value="gonder">');
+                });
+            });
+            
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

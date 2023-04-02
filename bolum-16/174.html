@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+            
+        
+        <style>
+          
+            #kapsayici div{
+                margin: 50px;
+                padding: 50px;
+                background-color: skyblue;
+            }
+            
+            .gizli{
+                opacity: 0;
+            }
+            
+        </style>
+            
+        
+    </head>
+    
+    <body>
+
+        <div id="kapsayici">
+            <div class="yaz">Hello</div>
+            <div class="yaz">Hello</div>
+            <div class="yaz">Hello</div>
+            <div class="yaz">Hello</div>
+            <div class="yaz">Hello</div>
+            <div class="yaz">Hello</div>
+            <div class="gizli">Fade In</div>
+            <div class="gizli">Fade In</div>
+            <div class="gizli">Fade In</div>
+            <div class="gizli">Fade In</div>
+            <div class="gizli">Fade In</div>
+            <div class="gizli">Fade In</div>
+            <div class="gizli">Fade In</div>
+        </div>
+        
+    <script>
+        
+       $(document).ready(function(){
+           $(window).scroll(function(){
+               $(".gizli").each(function(){
+                     var kutununUst = $(this).offset().top;
+                   var pencereAlt = $(window).scrollTop() + $(window).height(); // scrolltop ne kadar kaydırıldığını göstermektedir.
+                   if(pencereAlt > kutununUst){
+                       $(this).animate({'opacity' : '1'}, 2000);
+                   }
+               });
+           });
+       });
+        
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

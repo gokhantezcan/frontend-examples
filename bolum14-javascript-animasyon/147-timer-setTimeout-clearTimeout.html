@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        
+    </head>
+    
+    <body>
+        
+        <input type="button" value="durdur" onclick="dur()">
+        <script>
+            function mesaj(){
+                alert("merhaba");
+//                sure = setTimeout("mesaj()", 3000); // burada oldugu zaman her 3 saniyedebir çalışacaktır.
+            }
+           sure = setTimeout("mesaj()", 5000);//bir kere çıkar
+            function dur(){
+                clearTimeout(sure); // durdurmak istersen.
+            }
+            
+//            var zaman = setTimeout(function(){
+//                alert("merhaba dunya");
+//            }, 2000); // yine bir kere çalışacaktır.
+            
+        </script>
+        
+    </body>
+    
+</html>

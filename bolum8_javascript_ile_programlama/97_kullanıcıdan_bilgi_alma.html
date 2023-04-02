@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Deneme</title>
+        <script>
+            function hesapla(){
+                var a = document.getElementById("sayi1").value;
+                var b = document.getElementById("sayi2").value;
+                a = parseInt(a);
+                b = parseInt(b);
+                var islem = a + b;
+                alert(islem);
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+        
+        Sayi1<input type="text" id="sayi1"><br>
+        Sayi2<input type="text" id="sayi2"><br>
+        <input type="button" value="hesapla" onclick="hesapla()">
+        
+    </body>
+    
+</html>

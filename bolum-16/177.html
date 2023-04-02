@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Display multiple months</title>
+  <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+  <link rel="stylesheet" href="jqueryui/theme/jquery-ui-themes-1.12.1/themes/swanky-purse/theme.css">
+  <script src="jqueryui/external/jquery/jquery.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      numberOfMonths: 3,
+      showButtonPanel: true,
+        dateFormat: "dd/mm/yy", // özellikler , ile ayrılarak kullanılabiliyor.
+        monthNames: [ "Ocak", "Subat", "Mart", "Nisan", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December" ],
+        dayNamesMin: [ "Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa" ],
+        firstDay: 1
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<p>Date: <input type="text" id="datepicker"></p>
+ 
+ 
+</body>
+</html>

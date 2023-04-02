@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>If Else</title>
+        <script>
+            
+        </script>
+    </head>
+     
+    <body>
+
+        Adınız: <input type="text" id="ad"><br><br>
+        Soyadınız: <input type="text" id="soyad"><br><br>
+        Sifreniz: <input type="password" id="sifre"><br><br>
+        
+        <input type="button" value="Kontrol Et" onclick="kontrol()">
+        
+        <script>
+            function kontrol(){
+                var ad = document.getElementById("ad").value;
+                var soyad = document.getElementById("soyad").value;
+                var password = document.getElementById("sifre").value;
+                console.log(ad);
+                
+                
+                if(ad == "gokhan"){
+                    alert("bos");
+                }
+                
+            }
+        
+        </script>
+       
+    </body>
+    
+</html>

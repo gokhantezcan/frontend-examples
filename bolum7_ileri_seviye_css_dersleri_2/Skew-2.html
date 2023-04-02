@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            .kutu{
+                background: #000;
+                width: 400px;
+                margin: 50px auto;
+            }
+            
+            .ic{
+               height: 300px;
+                position: relative;
+                background: #000;
+            }
+            .ic::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #ff0004;
+                top: 117px;
+                transform: skewY(30deg);
+                z-index: -1;
+                
+            }
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kutu">
+            <div class="ic"></div>
+        </div>
+    
+    </body>
+
+</html>

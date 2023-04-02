@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        
+        
+        <style>
+            
+        </style>
+        
+        
+        
+    </head>
+    
+    <body>
+<!--        before-->
+        <div id="yazi">
+<!--            prepend-->
+            <p>lsdjfldksfjkldsjfkldsjfkldsjfkldsjklfjdsklfjkldsjfkldsjfkldjsklfjdskl
+                lsdjfldksfjkldsjfkldsjfkldsjfkldsjklfjdsklfjkldsjfkldsjfkldjsklfjdskl
+            </p>
+<!--            append-->
+        </div>
+<!--        after-->
+        <script>
+//            var nesne = document.createElement("h1");
+//            nesne.innerHTML="Burasi baslik";
+//            var eklenecek = document.getElementById("yazi");
+//            eklenecek.insertBefore(nesne, eklenecek.childNodes[0]);
+            
+            $(document).ready(function(){
+                $("#yazi").prepend("<h1> burasi baslik olacak</h1>"); // sectigin tagin hemen ilk sirasina ekler.
+                $("#yazi").append("<h1> burasi baslik olacak</h1>");
+                $("#yazi").before("<h1> burasi baslik olacak</h1>");
+                $("#yazi").after("<h1> burasi baslik olacak</h1>");
+                
+//                remove, empty
+                $("p").empty(); // içini boşaltmıstır.
+                $("p").remove();
+            });
+            
+            
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        
+        
+    </head>
+    
+    <body>
+        <h1 class="baslik" id="baslik">Jquery Dersleri</h1>
+        <h1 class="baslik" id="baslik">Jquery Dersleri</h1>
+        <p>lkdjsfkldsjfklsdjf</p>
+        <div>lkdjsfkldsjfklsdjf</div>
+        <p>lkdjsfkldsjfklsdjf</p>
+        <p>lkdjsfkldsjfklsdjf</p>
+        
+        <script>
+        
+            $("h1").css("color", "red");
+            $(".baslik").css("font-size", "70px");
+            $("#baslik").html("merhaba gokhan");
+            var yazi =  $("#baslik").html(); // yaziyi okuyabilirsin.
+//            alert(yazi);
+            
+//            $("p").css("color", "blue"); // hepsini mavi yapacaktır.
+             $("p:first").css("color", "blue");
+            $("p:last").css("color", "blue");
+            $("p,h1").css("color", "yellow");
+            
+            
+            
+        </script>
+        
+        
+    </body>
+    
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+    </head>
+    
+    <body>
+        
+        <ul id="dil">
+            <li>javascript</li>
+            <li>python</li>
+            <li>c#</li>
+        </ul>
+        
+        <script>
+//            var baslik = document.createElement("h1");
+//            var yazi = document.createTextNode("Burasi Baslik");
+//            baslik.appendChild(yazi);
+//            document.body.appendChild(baslik);
+//            
+            var yenioge = document.createElement("li");
+            var yazi = document.createTextNode("delphi");
+            yenioge.appendChild(yazi);
+            var nereye = document.getElementById("dil");
+            nereye.insertBefore(yenioge, nereye.childNodes[1]);
+        
+        </script>
+        
+    </body>
+    
+</html>

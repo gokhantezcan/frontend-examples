@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            .kapsayici{
+                width: 400px;
+                height: 400px;
+                border: 1px solid #000000;
+                margin: 150px auto;
+                perspective: 400px;
+            }
+            
+            .kutu{
+                width: 200px;
+                height: 200px;
+                background: #ff0004;
+                transform: rotateY(90deg) translateX(300px); /*aynı zamanda koordinat sisteminide donduruyoruz.*/
+                /*sadece nesneleri dondurmuyoruz.çizim programlarındaki gibi dusun    rotateX(80deg)*/
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kapsayici">
+            <div class="kutu"></div>
+        </div>
+    
+    </body>
+
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ananim Fonksiyonlar</title>
+        <script>
+            function tumunuSec(){
+                for(i = 0; i < 2; i++){
+                    document.getElementsByName("hobi")[i].checked = true;
+                }
+            }
+        </script>
+    </head>
+     
+    <body>
+        
+        <form action="">
+            Hobileriniz<br>
+            <input type="checkbox" name="hobi">Kitap Okumak<br>
+            <input type="checkbox" name="hobi">Spor Yapmak<br>
+            <input type="button" value="Tumunu Sec" onclick="tumunuSec()">
+        
+        </form>
+       
+    </body>
+    
+</html>

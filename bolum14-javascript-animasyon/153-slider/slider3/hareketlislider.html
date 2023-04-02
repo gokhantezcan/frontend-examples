@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Slider Örnek 3</title>
+	<style>
+		.kapsayici{
+			max-width: 640px;
+			margin: auto;
+			border: 2px solid #000;
+			overflow: hidden;
+		}
+		.resimler{
+			display: flex; /*resimler sağa dogru yanyana yerleşecektir.*/
+			width: 100%;
+			
+		}
+		img{
+			width: 640px;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="kapsayici">
+		<div class="resimler">
+			<img src="images/resim1.jpg" alt="">
+			<img src="images/resim2.jpg" alt="">
+			<img src="images/resim3.jpg" alt="">
+			<img src="images/resim4.jpg" alt="">
+		
+		
+		</div>
+	</div>
+	<input type="button" value="Geri" id = "geri" onClick="onceki()">
+	<input type="button" value="ileri" id="ileri" onClick="sonraki()">
+	
+	<script>
+		var slide = document.querySelector(".resimler");
+		var resim = document.querySelectorAll("img");
+		var ileri = document.getElementById("ileri");
+		var geri = document.getElementById("geri");
+		var sayi = 0;
+		var genislik = 640;
+		
+		slide.style.transform = 'translateX('+(-sayi*genislik)+'px)';
+		function sonraki(){
+			sayi++;
+			if(sayi >= resim.length){
+				sayi = 0;
+			}
+			slide.style.transition = "transform 0.5s ease";
+			slide.style.transform = 'translateX('+(-sayi*genislik)+'px)';
+			console.log(sayi);
+		}
+		function onceki(){
+			sayi--;
+			if(sayi < 0){
+				sayi = resim.length - 1;
+			}
+			slide.style.transition = "transform 0.5s ease";
+			slide.style.transform = 'translateX('+(-sayi*genislik)+'px)';
+			console.log(sayi);
+		}
+		sure = setInterval(sonraki,2000);
+	
+	</script>
+</body>
+</html>

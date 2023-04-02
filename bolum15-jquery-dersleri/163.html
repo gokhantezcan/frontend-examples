@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <style>
+            .bilgi {
+                width: 200px;
+                height: 200px;
+                background: #ffb5b6;
+                border: 1px solid #000;
+            }
+            
+            .renkdegistir {
+                background: #8681f9;
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        <div class="bilgi" id="icerik"><br>
+            Ad Soyad : <input type="text" name="adSoyad" id="adSoyad" value=""><br>
+            Okul No:   <input type="text" id="okulno" name="okulNo" value="OkulNo">
+            <br>
+            <input type="button" value="basiniz" id="basiniz" name="basiniz">
+            <input type="button" value="siliniz" id="sil" name="sil">
+            <input type="button" value="degistir" id="degistir" name="degistir">
+        </div>
+        
+        <script>
+        
+            $(document).ready(function(){
+                $(":button:eq(0)").click(function(){
+                    $("#icerik").addClass("renkdegistir");
+                });
+                
+                $(":button:eq(1)").click(function(){
+                    $("#icerik").removeClass("renkdegistir");
+                });
+                
+                $(":button:eq(2)").click(function(){
+                    $("#icerik").toggleClass("renkdegistir"); // bir ekler bir siler gibi düşünebilirisn. gider gelir
+                });
+                
+                $(":button:eq(2)").click(function(){
+                    alert($("#icerik").hasClass("renkdegistir")); // bir ekler bir siler gibi düşünebilirisn. gider gelir
+                });
+            });  
+        
+        </script>
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

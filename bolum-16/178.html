@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Modal confirmation</title>
+  <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+  <link rel="stylesheet" href="jqueryui/theme/jquery-ui-themes-1.12.1/themes/cupertino/theme.css">
+  <script src="jqueryui/external/jquery/jquery.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
+  <script>
+  $( function() {
+      
+      $("#sil").click(function(){
+          $( "#dialog-confirm" ).dialog( "open" );
+      });
+      
+    $( "#dialog-confirm" ).dialog({
+      resizable: false,
+      height: "auto",
+      width: 400,
+      modal: true, // arkadaki ögelere ersebilirsin.
+        autoOpen: false,
+      buttons: {
+        "Sil": function() {
+          $( this ).dialog( "close" );
+            $(":checked, :checked+label").remove();
+        },
+        iptal: function() {
+          $( this ).dialog( "close" );
+        }
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="dialog-confirm" title="Empty the recycle bin?">
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+ 
+    <input type="checkbox" name="" id="basket">
+    <label for="basket">Basketbol</label>
+    <input type="checkbox" name="" id="futbol">
+    <label for="basket">futbol</label>
+    <input type="checkbox" name="" id="voleybol">
+    <label for="basket">voleybol</label>
+    <button id="sil">Sil</button>
+ 
+ 
+</body>
+</html>

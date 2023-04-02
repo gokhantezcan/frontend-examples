@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+        <style>
+            .normal{
+                font-size: 40px;
+            }
+            
+            .buyut{
+                font-size: 80px;
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        <p class="normal" id="sayac"></p>
+        
+        <script>
+            var dakika = 5;
+            var saniye = 10;
+            var sure = setInterval(function(){
+                dakikagoster = dakika;
+                saniyegoster = saniye;
+                if(dakika < 10){
+                    dakikagoster = "0" + dakika;
+                }
+                if(saniye < 10){
+                    saniyegoster = "0" + saniye;
+                }
+                yazdir = document.getElementById("sayac");
+                yazdir.innerHTML = dakikagoster + ":" + saniyegoster;
+                saniye--;
+                if(saniye == 0){
+                    saniye = 59;
+                    yazdir.classList.add("buyut"); // class ekleyip çıkarabiliryuorsun
+                    if(dakika == 0){
+                        clearInterval(sure);
+                        window.location="https://google.com";
+                    }
+                    dakika--;
+                }
+            }, 1000);
+            
+        </script>
+        
+    </body>
+    
+</html>

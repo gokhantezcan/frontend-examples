@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flex</title>
+        
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                width: 800px;
+                border: 1px solid #c3c3c3;
+                display: flex;
+                box-sizing: border-box;
+                align-items: flex-start;
+            }
+            
+            .kutu{
+                width: 50px;
+                text-align: center;
+                padding: 70px 0;;
+                font-size: 18px;
+                flex-grow: 1;
+            }
+            
+            .kutu1{
+                background: #ff6769;
+                flex-basis: 200px;
+            }
+            .kutu2{
+                background: #a474f1;
+                flex-basis: 200px;
+            }
+            .kutu3{
+                background: #6eff76;
+                flex-basis: 300px;
+            }
+        
+        </style>
+    
+    </head>
+    
+    <body>
+    
+        <div class="container">
+            <div class="kutu kutu1">1</div>
+            <div class="kutu kutu2">2</div> 
+            <div class="kutu kutu3">3</div>
+            
+        </div>
+    
+    </body>
+    
+    
+</html>

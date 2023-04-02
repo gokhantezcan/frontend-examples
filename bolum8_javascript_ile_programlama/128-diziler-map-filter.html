@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>If Else</title>
+        <script>
+            
+        </script>
+    </head>
+     
+    <body>
+        <script>
+           dizi = [3,7,6,9,15,23,18,45];
+//        yenidizi = [];
+//            yenidizi = dizi.map(function(eleman){
+//                if(eleman<20){
+//                    return eleman*3;
+//                } else {
+//                    return eleman;
+//                }
+//            });
+//            console.log(yenidizi);
+            
+//            yeniKirtasiye = [];
+//            var kirtasiye = ["kitap", "kalem", "silgi", "defter", "yapiskan", "bant"];
+//            yeniKirtasiye = kirtasiye.map(function(eleman){
+//                if(eleman == "defter"){
+//                    return eleman.toUpperCase();
+//                } else {
+//                    return eleman.toLowerCase();
+//                }
+//            })
+//            console.log(yeniKirtasiye);
+            
+            yeniDizi = dizi.filter(function(eleman, indeks){
+                if(eleman < 20){
+                    return eleman; // herhangi matematiksel işlem yapilmaz. o map de yapilir.
+                }
+            });
+            console.log(yeniDizi);
+            
+        </script>
+        
+    </body>
+    
+</html>

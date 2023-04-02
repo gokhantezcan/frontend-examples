@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $(".baslik:eq(0)").click(function(){
+                    $(".icerik:eq(0)").slideToggle(500, function(){ // call back 500 den sonra diğeri çalışacak yani
+                        $(".icerik:eq(1), .icerik:eq(2)").slideUp(500);
+                    }); //slideTogle kullanabilrsin. acıksa kapa kapalıysa ac
+                    
+                });
+                
+                $(".baslik:eq(1)").click(function(){
+                    $(".icerik:eq(1)").slideToggle("slow");
+                    $(".icerik:eq(0), .icerik:eq(2)").slideUp("slow");
+                });
+                
+                $(".baslik:eq(2)").click(function(){
+                    $(".icerik:eq(2)").slideDown("slow");
+                    $(".icerik:eq(0), .icerik:eq(1)").slideUp("slow");
+                });
+            });
+        </script>
+        
+        <style>
+            .baslik, .icerik{
+                padding: 5px;
+                text-align: center;
+                background: #b1e0ff;
+                border: 1px solid #83c0f8;
+            }
+            .icerik{
+                padding: 30px;
+                display: none;
+            
+            }
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        <div class="baslik">Menu1</div>
+        <div class="icerik">Mensdşlfklşdskflşdskflşksdşlfkşldskflşdskflşsdklşfksldşfk
+            dşslfkşlsdkfşlksdlşfklşsdkflşdskfşlskdşlfksdşlu1</div>
+        
+        <div class="baslik">Menu1</div>
+        <div class="icerik">Mensdşlfklşdskflşdskflşksdşlfkşldskflşdskflşsdklşfksldşfk
+            dşslfkşlsdkfşlksdlşfklşsdkflşdskfşlskdşlfksdşlu1</div>
+        
+        <div class="baslik">Menu1</div>
+        <div class="icerik">Mensdşlfklşdskflşdskflşksdşlfkşldskflşdskflşsdklşfksldşfk
+            dşslfkşlsdkfşlksdlşfklşsdkflşdskfşlskdşlfksdşlu1</div>
+        
+        
+    </body>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

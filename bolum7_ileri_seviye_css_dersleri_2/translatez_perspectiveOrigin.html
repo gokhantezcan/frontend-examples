@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+    
+        <style type="text/css">
+           
+            .kapsayici{
+                width: 400px;
+                height: 400px;
+                border: 1px solid #000000;
+                margin: 100px auto;
+                perspective: 400px;
+                perspective-origin: 25% -30%;/*bakış yonumuz nereden bakacağız objeye varsayılan 50% 50% yani tam ortadandır*/
+            }
+            
+            .kutu{
+                width: 200px;
+                height: 200px;
+                opacity: .7;
+                position: absolute;
+            }
+            
+            .kutu1{
+                background: #ff0006;
+                transform: rotateX(-45deg) translateZ(-20px);
+            }
+            
+            .kutu2{
+                background: #4efde5;
+                transform: rotateX(-45deg) translateZ(40px);
+            }
+            
+            .kutu3{
+                background: #ff0004;
+                transform: rotateX(-45deg) translateZ(100px);
+            }
+            
+        </style>
+        
+    </head>
+
+
+    <body>
+    
+        <div class="kapsayici">
+            <div class="kutu kutu1">1</div>
+            <div class="kutu kutu2">2</div>
+            <div class="kutu kutu3">3</div>
+        </div>
+    
+    </body>
+
+</html>

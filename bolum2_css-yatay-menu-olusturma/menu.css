@@ -1,0 +1,72 @@
+nav {
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style: none;/* listelerin basındaki işaretler kalkacak.*/
+    padding: 0;/* sola hizalamış olduk*/
+}
+nav ul li {
+    display: block; /* bunları kutucuk gibi göstermiş olduk div gibi oldu yani*/
+    float: left;/*yanyana gelmelerini sağladık*/
+}
+nav ul li a {
+    display: block;/*inline yapıdadır normalde. o endenle block haine geldi*/
+    padding: 20px 15px;/*birbirlerinden uzaklaştırdık*/
+    background: #161616;
+    color: aliceblue;
+    text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 16px;
+	width: 150px;
+	text-align: center;
+
+}
+nav ul li a:hover{ /*fare üzeride geldiğinde yapılacak olan işlemnlerdir.*/
+	background: #8F8F8F;
+	color: tomato;
+	transition-duration: 0.5s;/*art arda geçişlerin biraz daha soft olmasını istiyoruz.*/
+}
+nav ul li ul{
+	display: none; /*ilk etapda bunlar gizlensin*/
+	position: absolute;
+	width: 150px;
+}
+nav ul li:hover ul{
+	display: block; /*üzerine geldiğimizde görünsün istiyoruz.*/
+}
+nav ul li ul li{
+	display: block
+}
+nav ul li ul li a{
+	display: block;
+	width: 150px;
+	text-align: left;/*a lar birbirini etkileyebilir dolayısıyla ayrı belirtmek gerekebilir*/
+}
+.sol {/*kenarların border radius bilgilerinin istediğimiz gibi olması için kullanılır
+    burada farklı browserlar için farklı kullanımlar bulunmaktadır.*/
+    border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	-webkit-border-top-left-radius: 15px;/*safari chrome*/
+	-webkit-border-bottom-left-radius: 15px;
+	-ms-border-top-left-radius: 15px;
+	-ms-border-bottom-left-radius: 15px;
+	-o-border-top-left-radius: 15px;/*opera*/
+	-o-border-bottom-left-radius: 15px;
+	-moz-border-top-left-radius: 15px;/*mozilla firefox*/
+	-moz-border-bottom-left-radius: 15px;
+	
+	
+}
+.sag {
+    border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-ms-border-top-right-radius: 15px;
+	-ms-border-bottom-right-radius: 15px;
+	-o-border-top-right-radius: 15px;
+	-o-border-bottom-right-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	-moz-border-bottom-right-radius: 15px;
+}

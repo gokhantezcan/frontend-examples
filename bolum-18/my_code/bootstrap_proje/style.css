@@ -1,0 +1,508 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.bolum1{
+    height: 100vh;
+    background: url("images/bg_1.jpg");
+    background-size: cover;
+    background-position: 50% 0; /* x ekseninde sağa sola kaymasını sağladık.*/
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 85%;
+    z-index: 999;
+}
+
+@media only screen and (max-width:768px){
+    .navbar{
+        background: rgba(0,0,0,0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.bolum1 .navbar-brand{
+    font-weight: 600;
+}
+
+.bolum1 .navbar li{
+    margin-left: 10px;
+}
+
+.bolum1 .navbar li a{
+    font-size: 15px;
+    color: white !important; /*bootstrap style larını bu sekilde ezebilirsin.*/
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.2;
+}
+
+.bolum1 .navbar .navbar-nav .active>a,
+.bolum1 .navbar .navbar-nav a:hover
+{
+    color: #f7b71d !important;
+}
+
+.bolum1 .container .row{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bolum1 .sagicerik{
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.bolum1 .sagicerik h3{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bolum1 .sagicerik label{
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bolum1 .sagicerik input[type="text"]{
+    font-size: 12px;
+}
+
+.bolum1 .sagicerik input[type="submit"]{
+    background-color: #f7b71d !important;
+    border: 1px solid @fc983c !important;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width:768px){
+    .bolum1{
+        height: 1300px;
+    }
+    
+    h2{
+        margin-top: 35px;
+    }
+    
+    .sagicerik{
+        margin-left: 8px;
+    }
+}
+
+.bolum2 {
+    margin: 50px auto;
+}
+
+.bolum2 label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.bolum2 select{
+    font-size: 13px;
+}
+
+.bolum2 .btn.btn-primary{ /*aynı nesneye ait olduğu için arada boşluk bırakmayacaksın.*/
+    margin-top: 30px;
+    background-color: #fc983c !important;
+    border: none;
+}
+
+.bolum3{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bolum3 p{
+    color: #fc983c;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.bolum3 h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum3 i{
+    font-size: 25px;
+    color: #fc983c;
+}
+
+.bolum3 h4{
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.bolum3 .etiket{
+    text-align: left;
+}
+
+.bolum3 .etiket p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #454545;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.bolum4 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bolum4 p{
+    font-size: 12px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum4 h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.etiket2{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ababab;
+    padding-bottom: 20px;
+}
+
+.etiket2 .img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.bolum4 .fiyat{
+    background: white;
+/*    border: 1px solid black;*/
+}
+
+.bolum4 .tutar{
+    font-size: 20px;
+    padding: 10px;
+    color: #fc983c;
+}
+
+.bolum4 .fiyat p{
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.bolum4 .fiyat .from-day span{
+    display: block;
+    font-size: 10px;
+}
+
+.etiket2 h5{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000;
+}
+
+.etiket2 p{
+    color: rgba(0,0,0,0.5);
+}
+
+.etiket2 .butonlar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.etiket2 .butonlar .btn{
+    width: 45%;
+    color: #000;
+    font-size: 14px;
+    transition: 0.25;
+}
+
+.bolum4 .etiket2 .butonlar .btn:hover{
+    background: #fc983c;
+    color: white;
+    font-weight: 600;
+}
+
+.bolum4 .col-md-6.col-lg-3{
+    margin-bottom: 20px;
+}
+
+.bolum5{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url("images/bg_2.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.bolum5 .container {
+    z-index: 100;
+/*    position: absolute;*/
+    color: white;
+    text-align: center;
+}
+
+.bolum5 p{
+    margin-top: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+.bolum5 h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.bolum5 .resim{
+    width: 85px;
+    height: 85px;
+    border: 2px solid #fc983c;
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.bolum5 .icerik5 h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.bolum5 .icerik5 p{
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:768px){
+    .bolum5{
+        height: 1400px;
+    }
+    .bolum5 .icerik5{
+        margin-bottom: 50px;
+    }
+}
+
+.bolum6{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bolum6 p{
+    font-size: 12px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum6 h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum6 .card{
+    text-align: center;
+    height: 100%;
+}
+
+.bolum6 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.bolum6 .card p{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #666;
+}
+
+.bolum6 .card h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fc983c;
+}
+
+.bolum6 .card span{
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 600: 
+}
+
+.bolum7{
+    margin-top: 100px;
+}
+
+.bolum7 .resim{
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bolum7 .baslik p{
+    font-size: 14px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum7 .baslik h3{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.bolum7 article{
+    padding: 40px;
+}
+
+.bolum7 article p.icerik{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #666;
+}
+
+.bolum7 article .btn{
+    background-color: #fc983c;
+    border: none;
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+    .bolum7 .resim{
+        height: 600px;
+    }
+}
+
+footer{
+    margin-top: 100px;
+    background: #000;
+    padding: 80px 0;
+}
+
+footer h3{
+    color: #fff;
+    margin-bottom: 40px;
+    
+}
+
+footer p{
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
+
+footer ul.sosyal{
+    margin-top: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul.sosyal li{
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 6px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #171717;
+}
+
+footer ul.sosyal li a{
+    display: block;
+    font-size: 25px;
+    color: white;
+}
+
+footer ul.footerliste{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul.footerliste li{
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer ul.footerliste li a{
+    text-decoration: none;
+    color: rgba(255,255,255, 0.7);
+}
+
+.footerliste i{
+    color: #fff;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+footer .lisans{
+    margin-top: 40px;
+    color: rgba(255,255,255,0.7);
+}
+
+.bolum2, .bolum3, .bolum4, .bolum5, .bolum6, .bolum7, footer{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
